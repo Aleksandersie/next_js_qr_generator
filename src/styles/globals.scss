@@ -1,0 +1,230 @@
+$bColor: #FF8185;
+$codeSection: rgba(222, 222, 222, 0.64);
+$txtShadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$contWidth:1200px;
+
+$mediaStepOne:1200px;
+$mediaStepTwo:992px;
+$mediaStepThree:670px;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body{
+  background-color: $bColor;
+  font-family: 'Roboto', sans-serif;
+  ///////////////////////
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  //height: 100vh;
+};
+.container{
+  max-width:  $contWidth;
+  margin: 0 auto;
+  padding: 0px 15px;
+  @media (max-width:$mediaStepOne ){
+    max-width: 900px;
+  }
+  @media (max-width: $mediaStepTwo ){
+    max-width: 750px;
+  }
+  @media (max-width: $mediaStepThree){
+    max-width: none;
+  }
+
+};
+
+.header{
+
+}
+.headerTopText{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+  padding-top: 35px;
+  text-align: center;
+  text-shadow: $txtShadow;
+}
+
+.headerSmallText{
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: $txtShadow;
+  padding-top: 21px;
+}
+
+.codeSection{
+  margin-top: 30px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  @media (max-width: $mediaStepThree) {
+    flex-direction: column;
+    gap: 35px;
+  }
+}
+.codeBackground{
+  background: $codeSection;
+  border-radius: 30px;
+  margin-bottom: 35px;
+}
+///////////////////////////left
+.leftSelection{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  @media (max-width: $mediaStepThree) {
+    width: 100%;
+  }
+}
+
+.inputTextBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.linkInput{
+  text-align: center;
+  min-width: 230px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  border: 0px;
+  background: #CDB3B3;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+  font-size: 21px;
+  color: white;
+}
+.linkInputTopText{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-shadow: $txtShadow;
+  @media (max-width: $mediaStepThree){
+    font-size: 30px
+  }
+}
+.colorBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.colorSelectorBlock{
+  display: flex;
+  gap: 40px;
+}
+.colorSelectorGroupe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.colorSelectorLabel{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-shadow: $txtShadow;
+}
+.genButton{
+  background: #A62A2D;
+  border-radius: 13px;
+  width: fit-content;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.genButtonText{
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 38px;
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: $txtShadow;
+}
+
+//////////////////right
+.rightSelection{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  @media (max-width: $mediaStepThree) {
+    width: 100%;
+  }
+}
+.yourCodeText{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-shadow: $txtShadow;
+  @media (max-width: $mediaStepThree){
+    font-size: 30px
+  }
+}
+.imgArea{
+  border-radius: 10px;
+}
+.press{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-shadow: $txtShadow;
+
+}
+///////////////////code text
+.codeTextHeader{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 75px;
+  color: #FFFFFF;
+  padding-top: 35px;
+  text-align: center;
+  text-shadow: $txtShadow;
+  @media (max-width: $mediaStepThree) {
+    font-weight: 700;
+    font-size: 25px;
+    padding-top: 0px;
+  }
+}
+.codeText{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding-top: 35px;
+  text-align: center;
+  text-shadow: $txtShadow;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 25px;
+  @media (max-width: $mediaStepThree) {
+    font-size: 21px;
+    line-height: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

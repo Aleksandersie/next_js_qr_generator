@@ -12,9 +12,12 @@
     "@types/node": "18.15.10",
     "@types/react": "18.0.29",
     "@types/react-dom": "18.0.11",
+    "gsap": "^3.11.5",
     "next": "13.2.4",
+    "qrcode": "^1.5.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.60.0",
     "typescript": "5.0.2"
   }
 }
